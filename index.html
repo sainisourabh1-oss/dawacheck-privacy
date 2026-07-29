@@ -52,38 +52,53 @@
   a {
     color: #0060df;
   }
+  nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
 </style>
 </head>
 <body>
 
+<nav><a href="./home.html">Home</a> · <a href="./terms.html">Terms of Service</a></nav>
+
 <h1>Privacy Policy for DawaCheck</h1>
-<p class="updated">Last updated: July 25, 2026</p>
+<p class="updated">Last updated: July 29, 2026</p>
 
 <p>DawaCheck ("the app") helps you compare medicine prices in India and find cheaper, government-verified alternatives. This page explains what data the app handles and why.</p>
 
-<h2>No accounts, no sign-up</h2>
-<p>DawaCheck does not require you to create an account, and does not collect your name, phone number, or email address.</p>
+<h2>A verified phone number is required</h2>
+<p>A verified phone number is required before any part of the app can be used — this keeps the daily free allowance of checks fair for everyone and prevents automated abuse. Your phone number is verified either through Truecaller (if installed) or an SMS code, and is never guessed or trusted without server-side verification.</p>
 
-<h2>What the app sends to our server</h2>
+<h2>What we collect</h2>
 <ul>
-  <li><strong>Search queries:</strong> when you search for a medicine by name, that text is sent to our server to look up prices. It is not linked to you personally — there is no user ID or device ID attached to it.</li>
+  <li><strong>Phone number:</strong> your verified phone number, and your daily check count (used only to enforce the free daily allowance).</li>
+  <li><strong>Google account info (optional):</strong> if you choose to link a Google account — which is optional and only raises your daily check allowance, never required — we receive your name, email address, and profile photo from Google.</li>
+  <li><strong>Search queries:</strong> when you search for a medicine by name, that text is sent to our server to look up prices.</li>
   <li><strong>Photos (camera/gallery scan):</strong> when you use the scan feature, the photo is sent securely (HTTPS) to our server, which forwards it to Google's Gemini AI to identify the medicine. The photo itself is not stored by DawaCheck after the request completes.</li>
-  <li>To avoid re-processing the same request, our server keeps a small cache mapping a medicine's name to its identified details. This cache does not contain photos and is not linked to any individual user.</li>
+  <li><strong>Subscription status (optional paid tier):</strong> if you subscribe to the optional paid tier, the purchase itself is handled entirely by Google Play — we only receive confirmation that a subscription is active, never your payment details.</li>
 </ul>
 
-<h2>What stays on your phone</h2>
-<p><strong>My List</strong> (medicines you've saved) is stored only on your own device's local storage. It is never sent to or stored on our server.</p>
+<h2>My List</h2>
+<p>Medicines you add to My List are saved to your phone-verified account on our server (so the list follows you if you switch phones), and cached on your device. It is not sold or shared with anyone.</p>
+
+<h2>Deleting your data</h2>
+<p>From Settings → Account → "Delete my account" in the app, you can permanently remove your phone number, any linked Google info, and your saved My List from our server at any time. This also clears the local copy on your device. This action cannot be undone.</p>
 
 <h2>Third-party services we use</h2>
 <ul>
+  <li><strong>Truecaller</strong> — used to verify your phone number with a single tap, if you have the Truecaller app installed. See <a href="https://www.truecaller.com/privacy-policy">Truecaller's privacy policy</a>.</li>
+  <li><strong>Firebase (Google)</strong> — used to verify your phone number via SMS code when Truecaller isn't available. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+  <li><strong>Google Sign-In</strong> — used only to verify your identity if you choose to link a Google account. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
   <li><strong>Google (Gemini AI)</strong> — processes photos you choose to scan and text you search for, in order to identify medicines and look up current prices (which may involve a Google Search). See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+  <li><strong>Google Play Billing</strong> — handles the optional paid subscription purchase. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
   <li><strong>Google Maps</strong> — if you tap "Find a Kendra near me," the app opens Google Maps in your browser or Maps app. DawaCheck does not share any of your data with Google to do this beyond following a link.</li>
 </ul>
 
 <h2>What we don't do</h2>
 <ul>
   <li>We don't use advertising or analytics SDKs.</li>
-  <li>We don't sell or share your data with third parties for marketing.</li>
+  <li>We don't sell your personal data to third parties.</li>
   <li>We don't track you across other apps or websites.</li>
 </ul>
 
